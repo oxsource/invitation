@@ -25,22 +25,23 @@ def fill_card(target, ptarget, keys, image_path='assets/image.jpeg', fpath='asse
         font = ImageFont.truetype(fpath, key['size'])
         draw.text((key['x'],key['y']),key['str'],fill=fcolor,font=font)
         del font
-    img.save('喜帖_%s.jpg' % target[0],'jpeg')
+    img.show()
+    #img.save('喜帖_%s.jpg' % target[0],'jpeg')
 
 fixed = [
-        {'x':538,'y':525,'size':35,'str':'2017'},
-        {'x':658,'y':525,'size':35,'str':'2'},
-        {'x':718,'y':525,'size':35,'str':'21'},
-        {'x':840,'y':545,'size':35,'str':'三'},
-        {'x':580,'y':660,'size':35,'str':'冯鹏'},
-        {'x':580,'y':730,'size':35,'str':'王闫岩'},
-        {'x':555,'y':980,'size':32,'str':'三江红饭店'},
-        {'x':555,'y':1040,'size':32,'str':'下午17:30'},
-        {'x':555,'y':1095,'size':32,'str':'玉水金岸好声音KTV旁'},
+        {'x':560,'y':487,'size':32,'str':'2017'},
+        {'x':675,'y':487,'size':32,'str':'2'},
+        {'x':735,'y':487,'size':32,'str':'21'},
+        {'x':855,'y':508,'size':32,'str':'三'},
+        {'x':600,'y':622,'size':33,'str':'冯鹏'},
+        {'x':600,'y':693,'size':33,'str':'王闫岩'},
+        {'x':562,'y':940,'size':30,'str':'三江红饭店'},
+        {'x':562,'y':995,'size':30,'str':'下午17:30'},
+        {'x':562,'y':1050,'size':30,'str':'玉水金岸好声音KTV旁'},
         ]
 adjust =[
-        {'x':580,'y':365,'size':42},
-        {'x':655,'y':818,'size':35},
+        {'x':580,'y':325,'size':40},
+        {'x':665,'y':780,'size':35},
         ] 
 
 if __name__ == '__main__':
