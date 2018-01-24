@@ -25,8 +25,7 @@ def fill_card(target, ptarget, keys, image_path='assets/image.jpeg', fpath='asse
         font = ImageFont.truetype(fpath, key['size'])
         draw.text((key['x'],key['y']),key['str'],fill=fcolor,font=font)
         del font
-    img.show()
-    #img.save('喜帖_%s.jpg' % target[0],'jpeg')
+    img.save('喜帖_%s.jpg' % target[0],'jpeg')
 
 fixed = [
         {'x':560,'y':487,'size':32,'str':'2017'},
